@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "f1adb40e-543a-4fce-9777-1f5e54014f0a",
+		"name": "For_NG",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24972937"
+	},
+	"item": [
+		{
+			"name": "Register   wiht a token  NG",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "grant_type=password&username=admin&password=Test@123&imei=358240051111110"
+				},
+				"url": {
+					"raw": "https://192.168.97.56:1203//token",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"97",
+						"56"
+					],
+					"port": "1203",
+					"path": [
+						"",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Member Admission NG",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "aEMEggRRY-O4pt2UjMvQxSKcmRsSEVSICEUIkdb6yhCQxngPp2Duu5HI-y5kZ5--WkGczzNHVVx8UXE_N1yHkwwEAi6dlhrwIw_ytwhOpDjkqowhESaxudIMOkoi-jrnliTYC_I9mhE4Rz2r65BoKws4uCJUAh7fb6YoavqymlEceYGCSnO4Ir0BuX0rN-jijegJM02yy4tnBVDe9T35Hnr4ERcQh00RhIr8nYpNSx0fFLq5u3l5SnJ0YDrEsMnMP0N0NxzUpun0CAhUaejCZ-oHY78ju1yjn_PfRqUoi-PXUrzQmNm4jMduKvv5-ucee9E0iF0xgJaIKHPf8O6_D_Al2cIDnG6krBehP8R323A",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_Id\": 0,\r\n    \"_P_GroupId\": 79103,\r\n    \"_DefaultP_ProgramId\": 17,\r\n    \"_PassbookNumber\": \"29\",\r\n    \"_MembershipType\": 0,\r\n    \"_FullName\": \"w\",\r\n    \"_MotherMaidenFirstName\": \"ds\",\r\n    \"_MotherMaidenMiddleName\": \"ff\",\r\n    \"_MotherMaidenLastName\": \"sd\",\r\n    \"_FirstName\": \"\",\r\n    \"_MiddleName\": \"ff\",\r\n    \"_LastName\": \"fr\",\r\n    \"_DateOfBirth\": \"2001-12-18\",\r\n    \"_AdmissionDate\": \"2022-6-29\",\r\n    \"_NationalIdType\": 1,\r\n    \"_NationalIdNumber\": \"1545554433\",\r\n    \"_AdditionalNationalIdType\": 0,\r\n    \"_AdditionalNationalIdNumber\": \"1566254033\",\r\n    \"_FatherName\": \"ggg\",\r\n    \"_FatherDateOfBirth\": \"1978-12-18\",\r\n    \"_MotherName\": \"gg\",\r\n    \"_MotherDateOfBirth\": \"1987-12-18\",\r\n    \"_SpouseName\": \"\",\r\n    \"_SpouseDateOfBirth\": \"\",\r\n    \"_GuarantorName\": \"tf\",\r\n    \"_GuarantorRelation\": \"Mother\",\r\n    \"_GuarantorDateOfBirth\": \"1997-12-18\",\r\n    \"_GuarantorAddress\": \"ggvvyy\",\r\n    \"_GuarantorContactNumber\": \"5166254466\",\r\n    \"_GuarantorNationalIdNumber\": \"1625443366\",\r\n    \"_AdditionalGuarantorName\": \"\",\r\n    \"_AdditionalGuarantorRelation\": \"\",\r\n    \"_AdditionalGuarantorDateOfBirth\": \"\",\r\n    \"_AdditionalGuarantorAddress\": \"\",\r\n    \"_AdditionalGuarantorContactNumber\": \"\",\r\n    \"_AdditionalGuarantorNationalIdNumber\": \"\",\r\n    \"_ThirdGuarantorName\": \"\",\r\n    \"_ThirdGuarantorRelation\": \"\",\r\n    \"_ThirdGuarantorDateOfBirth\": \"\",\r\n    \"_ThirdGuarantorAddress\": \"\",\r\n    \"_ThirdGuarantorContactNumber\": \"\",\r\n    \"_ThirdGuarantorNationalIdNumber\": \"\",\r\n    \"_Sex\": 2,\r\n    \"_Religion\": 1,\r\n    \"_Caste\": 1,\r\n    \"_MaritalStatus\": 2,\r\n    \"_Education\": \"IILETERATE\",\r\n    \"_Profession\": \"\",\r\n    \"_TINNumber\": \"4455443355\",\r\n    \"_SpecialIdentification\": 0,\r\n    \"_LocationType\": 1,\r\n    \"_PovertyLevel\": 1,\r\n    \"_ResidenceType\": \"Own\",\r\n    \"_HouseOwnerName\": \"Parent\",\r\n    \"_NumberOfRooms\": \"22\",\r\n    \"_HouseType\": \"Permanent\",\r\n    \"_ProofOfAge\": 1,\r\n    \"_ProofOfAddress\": 1,\r\n    \"_IsActive\": true,\r\n    \"_ClosingDate\": \"\",\r\n    \"_DropoutReason\": 0,\r\n    \"_ResidentialAddress\": \"55\",\r\n    \"_PostalAddress\": \"55\",\r\n    \"_ContactNumber\": \"11225544125\",\r\n    \"_MPesaNo\": \"\",\r\n    \"_PermanentArea\": \"\",\r\n    \"_PermanentDistrict\": \"\",\r\n    \"_PermanentDistrictValue\": \"\",\r\n    \"_PermanentVillage\": \"\",\r\n    \"_PermanentBlock\": \"\",\r\n    \"_PermanentMobile\": \"\",\r\n    \"_PermanentLandMark\": \"\",\r\n    \"_PermanentPinCode\": \"\",\r\n    \"_PermanentState\": \"\",\r\n    \"_PermanentStateValue\": \"\",\r\n    \"_PermanentLivingAtCurrentHome\": \"\",\r\n    \"_AllowMobileAlerts\": true,\r\n    \"_BusinessLocation\": \"\",\r\n    \"_ParentMemberId\": 1276319,\r\n    \"_OtherFeeList\": [\r\n        {\r\n            \"_Id\": 301,\r\n            \"_P_ProgramId\": 17,\r\n            \"_P_Duration\": -1,\r\n            \"_P_InstallmentType\": -1,\r\n            \"_ShortName\": \"ADMISSION FEE\",\r\n            \"_Name\": \"ADMISSION FEE\",\r\n            \"_Amount\": 100,\r\n            \"_TransactionType\": 1,\r\n            \"_WhileAdmission\": true,\r\n            \"_WhileDisbursing\": false,\r\n            \"_IsFixed\": true,\r\n            \"_Condition\": 1,\r\n            \"_ConditionAmount\": 0,\r\n            \"_StartingDate\": \"2020-01-01T00:00:00\",\r\n            \"_EndingDate\": \"2099-12-31T00:00:00\",\r\n            \"_SortOrder\": 0,\r\n            \"_TotalAmount\": 0,\r\n            \"_Exempted\": false,\r\n            \"_Date\": \"\"\r\n        }\r\n    ],\r\n    \"_LoanAccountList\": [],\r\n    \"_SecurityAccountList\": []\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://192.168.97.56:1203//api/programs/MemberInsert",
+					"protocol": "https",
+					"host": [
+						"192",
+						"168",
+						"97",
+						"56"
+					],
+					"port": "1203",
+					"path": [
+						"",
+						"api",
+						"programs",
+						"MemberInsert"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
